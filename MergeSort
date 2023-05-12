@@ -1,0 +1,39 @@
+İlk olarak, verilen diziyi iki eşit parçaya bölüyoruz:
+Sol parça: [16, 21, 11]
+Sağ parça: [8, 12, 22]
+Her iki parçayı da ayrı ayrı Merge Sort algoritmasına tabi tutuyoruz:
+Sol parça için:
+[16, 21, 11] dizisini ikiye bölüyoruz:
+Sol parça: [16]
+Sağ parça: [21, 11]
+Sol parçayı ayrı ayrı sıralamaya gerek olmadığı için aynen bırakıyoruz.
+Sağ parçayı tekrar ikiye bölüyoruz:
+Sol parça: [21]
+Sağ parça: [11]
+Her iki parçayı da ayrı ayrı sıralıyoruz:
+Sol parça: [21]
+Sağ parça: [11]
+Sıralanmış parçaları birleştiriyoruz:
+[11, 21]
+Sağ parça için:
+[8, 12, 22] dizisini ikiye bölüyoruz:
+Sol parça: [8]
+Sağ parça: [12, 22]
+Sol parçayı ayrı ayrı sıralamaya gerek olmadığı için aynen bırakıyoruz
+Sağ parçayı tekrar ikiye bölüyoruz
+Sol parça: [12]
+Sağ parça: [22]
+Her iki parçayı da ayrı ayrı sıralıyoruz
+Sol parça: [12]
+Sağ parça: [22]
+Sıralanmış parçaları birleştiriyoruz:
+[12, 22]
+Sıralanmış iki parçayı birleştiriyoruz:
+Sol parça: [11, 21]
+Sağ parça: [8, 12, 22]
+
+Birleştirilmiş sonuç: [8, 11, 12, 21, 22]
+
+Verilen dizinin Merge Sort kullanılarak sıralanmış hali: [8, 11, 12, 21, 22].
+
+Merge Sort  Big-O : O(n log n)
